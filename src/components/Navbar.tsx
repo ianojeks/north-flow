@@ -15,8 +15,9 @@ export default function Navbar() {
         </div>
         <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           <a href="#converter" className="hover:text-foreground transition-colors">Rates</a>
-          <a href="#" className="hover:text-foreground transition-colors">Corridors</a>
-          <a href="#" className="hover:text-foreground transition-colors">How it Works</a>
+          <a href="#corridors" className="hover:text-foreground transition-colors">Corridors</a>
+          <a href="#payments" className="hover:text-foreground transition-colors">Payment Rails</a>
+          <a href="#how-it-works" className="hover:text-foreground transition-colors">How it Works</a>
         </div>
         <div className="flex items-center gap-3">
           <button
