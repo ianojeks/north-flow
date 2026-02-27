@@ -45,13 +45,14 @@ export default function HeroSection() {
               Start Sending
               <ArrowRight className="w-5 h-5" />
             </motion.button>
-            <motion.button 
+            <motion.a 
+              href="#converter"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl border border-border bg-secondary text-foreground font-display font-semibold text-lg hover:bg-muted transition-all"
             >
               View Rates
-            </motion.button>
+            </motion.a>
           </div>
 
           <div className="flex flex-wrap gap-8 text-sm text-muted-foreground">
