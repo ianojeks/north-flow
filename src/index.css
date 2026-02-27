@@ -6,6 +6,60 @@
 
 @layer base {
   :root {
+    --background: 0 0% 100%;
+    --foreground: 220 20% 10%;
+
+    --card: 220 14% 97%;
+    --card-foreground: 220 20% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+
+    --primary: 174 72% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 94%;
+    --secondary-foreground: 220 20% 20%;
+
+    --muted: 220 14% 94%;
+    --muted-foreground: 215 12% 45%;
+
+    --accent: 42 92% 56%;
+    --accent-foreground: 220 20% 10%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 14% 88%;
+    --input: 220 14% 88%;
+    --ring: 174 72% 48%;
+
+    --radius: 0.75rem;
+
+    --gradient-primary: linear-gradient(135deg, hsl(174, 72%, 48%), hsl(190, 80%, 42%));
+    --gradient-accent: linear-gradient(135deg, hsl(42, 92%, 56%), hsl(32, 95%, 50%));
+    --gradient-card: linear-gradient(145deg, hsl(220, 14%, 97%), hsl(220, 14%, 93%));
+    --gradient-hero: linear-gradient(180deg, hsl(220, 14%, 97%) 0%, hsl(0, 0%, 100%) 100%);
+
+    --shadow-glow: 0 0 40px hsl(174 72% 48% / 0.1);
+    --shadow-card: 0 4px 24px hsl(220 14% 50% / 0.08);
+    --shadow-elevated: 0 8px 40px hsl(220 14% 50% / 0.12);
+
+    --glass-bg: hsl(0 0% 100% / 0.7);
+    --glass-border: hsl(220 14% 88% / 0.5);
+    --grid-color: hsl(174 72% 48% / 0.07);
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 220 20% 20%;
+    --sidebar-primary: 174 72% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 14% 94%;
+    --sidebar-accent-foreground: 220 20% 20%;
+    --sidebar-border: 220 14% 88%;
+    --sidebar-ring: 174 72% 48%;
+  }
+
+  .dark {
     --background: 220 20% 6%;
     --foreground: 210 20% 92%;
 
@@ -34,8 +88,6 @@
     --input: 220 14% 18%;
     --ring: 174 72% 48%;
 
-    --radius: 0.75rem;
-
     --gradient-primary: linear-gradient(135deg, hsl(174, 72%, 48%), hsl(190, 80%, 42%));
     --gradient-accent: linear-gradient(135deg, hsl(42, 92%, 56%), hsl(32, 95%, 50%));
     --gradient-card: linear-gradient(145deg, hsl(220, 18%, 12%), hsl(220, 18%, 8%));
@@ -44,6 +96,10 @@
     --shadow-glow: 0 0 40px hsl(174 72% 48% / 0.15);
     --shadow-card: 0 4px 24px hsl(0 0% 0% / 0.4);
     --shadow-elevated: 0 8px 40px hsl(0 0% 0% / 0.5);
+
+    --glass-bg: hsl(220 18% 10% / 0.7);
+    --glass-border: hsl(220 14% 20% / 0.5);
+    --grid-color: hsl(174 72% 48% / 0.03);
 
     --sidebar-background: 220 18% 10%;
     --sidebar-foreground: 210 20% 85%;
@@ -103,8 +159,8 @@
 
   .glass {
     backdrop-filter: blur(16px);
-    background: hsl(220 18% 10% / 0.7);
-    border: 1px solid hsl(220 14% 20% / 0.5);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
   }
 
   .ticker-scroll {

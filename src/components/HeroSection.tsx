@@ -5,8 +5,8 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-[85vh] flex items-center bg-gradient-hero overflow-hidden">
       {/* Background grid */}
-      <div className="absolute inset-0 opacity-[0.03]" style={{
-        backgroundImage: "linear-gradient(hsl(174 72% 48%) 1px, transparent 1px), linear-gradient(90deg, hsl(174 72% 48%) 1px, transparent 1px)",
+      <div className="absolute inset-0" style={{
+        backgroundImage: "linear-gradient(var(--grid-color) 1px, transparent 1px), linear-gradient(90deg, var(--grid-color) 1px, transparent 1px)",
         backgroundSize: "60px 60px"
       }} />
       
